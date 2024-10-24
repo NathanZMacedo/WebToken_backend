@@ -12,7 +12,7 @@ import { config } from "dotenv";
 config();
 
 
-
+    
 
 
 // procurando arquivos
