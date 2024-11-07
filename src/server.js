@@ -6,6 +6,7 @@ import { dirname } from "path";
 import path from "path";
 import testRouter from "./routes/TestRoute.js";
 import productrouter from "./routes/ProductRouter.js";
+import comidaRouter from "./routes/ComidaRouter.js";
 import { connectDatabase } from "./config/database.js";
 import userRouter from "./routes/UserRouter.js";
 import { config } from "dotenv";
@@ -33,6 +34,7 @@ app.use(cors());
 app.use("/exemplo", testRouter);
 app.use("/products", productrouter);
 app.use("/auth", userRouter);
+app.use("/comidas", comidaRouter)
 
 //servindo uma pagina no html
 app.use(express.static(path.join(__dirname, "public")));
