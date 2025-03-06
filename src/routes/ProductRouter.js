@@ -7,8 +7,8 @@ const productrouter = Router();
 
 productrouter.get("/", ProductController.getAllProducts);
 productrouter.post("/create-product", ProductController.createdProduct);
-productrouter.put("/edit-product", UserController.authenticateToken, ProductController.editProduct);
-productrouter.delete("/delete-product/:id", UserController.authenticateToken, ProductController.deleteProduct);
+productrouter.put("/edit-product", ProductController.editProduct);
+productrouter.delete("/delete-product/:id", ProductController.deleteProduct);
 
 
 export default productrouter;

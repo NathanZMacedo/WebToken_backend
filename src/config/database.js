@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import pkg from 'pg';
+import pkg from "pg";
 const { Pool } = pkg;
 
 export const connectDatabase = () => {
