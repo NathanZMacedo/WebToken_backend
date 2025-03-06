@@ -15,10 +15,9 @@ config();
 
 import testRouter from "./routes/TestRoute.js";
 import productrouter from "./routes/ProductRouter.js";
-import comida from "./routes/ComidaRouter.js";
+import comidaRouter from "./routes/ComidaRouter.js";
 import userRouter from "./routes/UserRouter.js";
 import pokemonRouter from "./routes/PokemonRouter.js";
-import comidaRouter from "./routes/ComidaRouter.js";
 
 // procurando arquivos
 const __filename = fileURLToPath(import.meta.url);
